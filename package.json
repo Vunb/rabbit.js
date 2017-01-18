@@ -2,10 +2,10 @@
   "name": "rabbitmq.js",
   "description": "Easy stream-based messaging using RabbitMQ",
   "version": "0.4.5",
-  "homepage": "http://github.com/squaremo/rabbit.js",
+  "homepage": "http://github.com/vunb/rabbitmq.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/squaremo/rabbitmq.js.git"
+    "url": "https://github.com/vunb/rabbitmq.js.git"
   },
   "author": "Michael Bridgen <mikeb@squaremobius.net>",
   "directories": {

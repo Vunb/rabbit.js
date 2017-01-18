@@ -1,19 +1,19 @@
 # Messaging in Node.JS with RabbitMQ
 
-    $ npm install rabbit.js
+    $ npm install rabbitmq.js
 
 This library provides a simple, socket-oriented API* for messaging in
 [Node.JS](http://nodejs.org/), using
 [RabbitMQ](http://www.rabbitmq.com/) as a backend.
 
 ```js
-var context = require('rabbit.js').createContext();
+var context = require('rabbitmq.js').createContext();
 context.on('ready', function() {
   var pub = context.socket('PUB'), sub = context.socket('SUB');
   sub.pipe(process.stdout);
   sub.connect('events', function() {
     pub.connect('events', function() {
-      pub.write(JSON.stringify({welcome: 'rabbit.js'}), 'utf8');
+      pub.write(JSON.stringify({welcome: 'rabbitmq.js'}), 'utf8');
     });
   });
 });
